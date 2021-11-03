@@ -36,12 +36,12 @@
       </div>
 
       <div>
-        <input type="text" id="input-field" placeholder="input field for the exercise">
+        <input type="text" id="input-field" placeholder="input field for the exercise" onkeyup="consoleLogValue(event)">
       </div>
     </div>
 
     <div>
-      <p class="selectAllPs">And this text is just for the exercise too!</p>
+      <p class="selectAllPs" id="second-p">And this text is just for the exercise too!</p>
       <h2 style="color: red" id="footer-text" onclick="changeFooterText()">
         Save this page on your computer and open it with VSCode to get the
         questions!
@@ -153,8 +153,16 @@
        Attach an event listener to the input field in the page for console logging its value just after any keystroke.
       */
 
-      const inputField = document.getElementById("input-field");
-      // ...
+        const inputField = document.getElementById("input-field");
+        const addListener = function(parameter){
+            let usernameNode = inputField()
+            return usernameNode.value
+            }
+
+        const consoleLogValue = function(eventData){
+            let loggingValue = document.getElementById("second-p").innerText = addListener()
+
+        }
 
       /* EXERCISE 12
        Create a welcome alert message when the page successfully loads.
