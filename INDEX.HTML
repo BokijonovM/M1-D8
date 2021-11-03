@@ -3,6 +3,11 @@
     <style>
       .myHeading {
         color: red;
+
+      }
+      .background-color{
+          color: green;
+          background-color: green;
       }
     </style>
   </head>
@@ -15,13 +20,13 @@
     <div>
       <hr>
 
-      <ul id="firstList">
+      <ul id="firstList" class="unordered-list">
         <li>1st</li>
         <li>2nd</li>
         <li>3rd</li>
       </ul>
 
-      <ul id="secondList">
+      <ul id="secondList" class="unordered-list">
         <li>1st</li>
         <li>2nd</li>
         <li>3rd</li>
@@ -114,7 +119,8 @@
       */
 
       const firstUlDisappear = function () {
-        //
+        let makeFirstUlDisappeared = document.getElementById("firstList")
+        makeFirstUlDisappeared.style.display = "none"
       };
 
       /* EXERCISE 8
@@ -122,7 +128,8 @@
       */
 
       const paintItGreen = function () {
-        //
+        let makeGreenBackgroundToUL1 = document.getElementById("firstList").style.backgroundColor = "green"
+        let makeGreenBackgroundToUL2 = document.getElementById("secondList").style.backgroundColor = "green"
       };
 
       /* EXERCISE 9
