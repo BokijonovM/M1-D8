@@ -30,7 +30,7 @@
       <a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/strive.school">This link goes to Strive School</a>
 
       <div>
-        <p id="selectAllPs">This text is just for the exercise</p>
+        <p class="selectAllPs">This text is just for the exercise</p>
       </div>
 
       <div>
@@ -39,7 +39,7 @@
     </div>
 
     <div>
-      <p id="selectAllPs">And this text is just for the exercise too!</p>
+      <p class="selectAllPs">And this text is just for the exercise too!</p>
       <h2 style="color: red">
         Save this page on your computer and open it with VSCode to get the
         questions!
@@ -69,8 +69,10 @@
       */
 
       const changePcontent = function () {
-        let changeTextOfP = document.getElementById("selectAllPs")
-        changeTextOfP.innerHTML = "Hello I am changed P here"
+        let changeTextOfP = document.getElementsByClassName("selectAllPs")
+        for(let i=0; i < changeTextOfP.length; i++){
+            changeTextOfP[i].innerHTML = "Hello I am changed P here"
+        }
       };
 
       /* EXERCISE 4
