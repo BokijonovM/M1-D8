@@ -5,15 +5,12 @@
         color: red;
 
       }
-      .background-color{
-          color: green;
-          background-color: green;
-      }
+      
     </style>
   </head>
   <body>
     <div>
-      <h1 id="page-title">This is the title of the page</h1>
+      <h1 id="page-title" onclick="makeItClickable()">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -45,7 +42,7 @@
 
     <div>
       <p class="selectAllPs">And this text is just for the exercise too!</p>
-      <h2 style="color: red">
+      <h2 style="color: red" id="footer-text" onclick="changeFooterText()">
         Save this page on your computer and open it with VSCode to get the
         questions!
       </h2>
@@ -137,7 +134,10 @@
       */
 
       const makeItClickable = function () {
-        //
+        let changeColorOfHeader = document.getElementById("page-title")
+        let randomColor = Math.floor(Math.random()*16777215).toString(16);
+        changeColorOfHeader.style.color = randomColor
+
       };
 
       /* EXERCISE 10
@@ -145,7 +145,8 @@
       */
 
       const changeFooterText = function () {
-        //
+        let changeFooter = document.getElementById("footer-text").innerHTML = "Hello I am new footer here!"
+
       };
 
       /* EXERCISE 11
