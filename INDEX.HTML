@@ -8,7 +8,7 @@
   </head>
   <body>
     <div>
-      <h1>This is the title of the page</h1>
+      <h1 id="page-title">This is the title of the page</h1>
       <h2>This is the subtitle of the page</h2>
     </div>
 
@@ -30,7 +30,7 @@
       <a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/strive.school">This link goes to Strive School</a>
 
       <div>
-        <p>This text is just for the exercise</p>
+        <p id="selectAllPs">This text is just for the exercise</p>
       </div>
 
       <div>
@@ -39,7 +39,7 @@
     </div>
 
     <div>
-      <p>And this text is just for the exercise too!</p>
+      <p id="selectAllPs">And this text is just for the exercise too!</p>
       <h2 style="color: red">
         Save this page on your computer and open it with VSCode to get the
         questions!
@@ -51,7 +51,8 @@
       */
 
       const changeTitle = function (newTitle) {
-        //
+        let newPageTitle = document.getElementById("page-title")
+        newPageTitle.innerHTML = "I am new header"
       };
 
       /* EXERCISE 2
@@ -59,7 +60,8 @@
       */
 
       const addClassToTitle = function () {
-        //
+        let addNewColorToTitle = document.getElementById("page-title")
+        addNewColorToTitle.classList.add("myHeading")
       };
 
       /* EXERCISE 3
@@ -67,7 +69,8 @@
       */
 
       const changePcontent = function () {
-        //
+        let changeTextOfP = document.getElementById("selectAllPs")
+        changeTextOfP.innerHTML = "Hello I am changed P here"
       };
 
       /* EXERCISE 4
