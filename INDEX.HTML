@@ -29,7 +29,7 @@
 
       <a href="https://s3.eu-west-1.amazonaws.com/eduflow-production/activity-resources/strive.school">This link goes to Strive School</a>
 
-      <div>
+      <div id="second-p">
         <p class="selectAllPs">This text is just for the exercise</p>
       </div>
 
@@ -103,7 +103,10 @@
       */
 
       const addParagraph = function (content) {
-        //
+        let addNewParagraph = document.getElementById("second-p")
+        let secondParagraph = document.createElement("P")
+        secondParagraph.innerText = "Hello I am 2nd Paragraph here"
+        addNewParagraph.appendChild(secondParagraph)
       };
 
       /* EXERCISE 7
