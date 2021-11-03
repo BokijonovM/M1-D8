@@ -80,7 +80,10 @@
       */
 
       const changeUrls = function () {
-        //
+        let changeHREFTag = document.querySelector("a")
+        changeHREFTag.href = "https://www.google.com"
+
+        
       };
 
       /* EXERCISE 5
@@ -88,7 +91,11 @@
       */
 
       const addToTheSecond = function (content) {
-        //
+        let addNewListToSecondUL = document.getElementById("secondList")
+        let fourthListItem = document.createElement("LI")
+        fourthListItem.innerText = "4th"
+        addNewListToSecondUL.appendChild(fourthListItem)
+        
       };
 
       /* EXERCISE 6
