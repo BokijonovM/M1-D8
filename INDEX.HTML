@@ -41,7 +41,7 @@
     </div>
 
     <div>
-      <p class="selectAllPs" id="second-p">And this text is just for the exercise too!</p>
+      <p class="selectAllPs" id="second-pp">And this text is just for the exercise too!</p>
       <h2 style="color: red" id="footer-text" onclick="changeFooterText()">
         Save this page on your computer and open it with VSCode to get the
         questions!
@@ -83,9 +83,7 @@
 
       const changeUrls = function () {
         let changeHREFTag = document.querySelector("a")
-        changeHREFTag.href = "https://www.google.com"
-
-        
+        changeHREFTag.href = "https://www.google.com"  
       };
 
       /* EXERCISE 5
@@ -155,12 +153,12 @@
 
         const inputField = document.getElementById("input-field");
         const addListener = function(parameter){
-            let usernameNode = inputField()
+            let usernameNode = inputField
             return usernameNode.value
             }
 
         const consoleLogValue = function(eventData){
-            let loggingValue = document.getElementById("second-p").innerText = addListener()
+            let loggingValue = document.getElementById("second-pp").innerText = addListener()
 
         }
 
